@@ -1,3 +1,5 @@
+from pydoc import text
+
 tekst = "Witaj Świecie"
 print(tekst)
 print(type(tekst))
@@ -36,3 +38,15 @@ print(tekst.count("e"))  # występuje 2 razy
 
 # "w"
 print(tekst.lower().count("w"))  # występuje 2 razy
+
+# Witaj Świecie
+# 01234556789.... numerowane od zera
+
+print(tekst.count("j", 0, 4))  # występuje 0 razy, z prawej strony zbiór otwarty -> 0123
+print(tekst.count('a', 3, 4))  # wystapi 1 raz
+
+print(tekst.removeprefix("Witaj"))  # " Świecie"
+print(tekst.removesuffix("Świecie"))  # "Witaj "
+
+# strip() - usunięcie białych znaków, wiodących i kończących spacji
+print(tekst.removesuffix("Świecie").strip())  # "Witaj"
