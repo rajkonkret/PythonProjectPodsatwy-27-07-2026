@@ -59,3 +59,29 @@ print(sys.int_info)
 # rzutowanie typów int(), str()
 print(int("39") + 30)  # 69
 print("39" + str(30))  # 3930
+
+# zmienna - pudełko, szufladka na dane
+
+name = "Radek"
+print(name)  # Radek
+print(type(name))  # <class 'str'>
+
+age = 89
+print(age)
+print(type(age))  # <class 'int'>
+
+# typowanie dynamiczne
+age = 'Radek'
+print(age)  # Radek
+print(type(age))  # <class 'str'>
+
+age = "90"
+# print(age + 10)  # TypeError: can only concatenate str (not "int") to str
+
+print(age * 2) # 9090
+print(168 * "70")
+# 70707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070
+# 70707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070
+# 707070707070707070707070707070707070707070
+# 70707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070
+
