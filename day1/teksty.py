@@ -83,3 +83,31 @@ print(f"""  Mam na imię {imie}
 i lubię Pythona.""")
 # "  Mam na imię Radek
 # i lubię Pythona."
+
+print('''Tekst
+wielolinijkowy''')
+# "Tekst
+# wielolinijkowy"
+
+starszy = "Witaj %s!"  # %s - string
+print(starszy % imie)  # %s -> imie, Witaj Radek!
+
+print("Witaj {}!".format("Radek"))  # Witaj Radek!
+
+print("imie:", imie)  # imie: Radek
+
+# sep
+# string inserted between values, default a space.
+# end
+# string appended after the last value, default a newline.
+print("Imie:", imie, sep="_ _")  # Imie:_ _Radek
+
+# komentarz
+
+# komentarz
+# wiele linijek
+
+"""Komentarz
+    wielolinijkowy (docstring)"""
+
+print(print.__doc__)
