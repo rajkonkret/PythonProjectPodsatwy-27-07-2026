@@ -78,3 +78,8 @@ print(tekst_format)
 # \t tabulator
 # \n nowa linia
 # \b - backspace
+
+print(f"""  Mam na imię {imie}
+i lubię Pythona.""")
+# "  Mam na imię Radek
+# i lubię Pythona."
