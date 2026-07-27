@@ -40,7 +40,7 @@ print("Radek")
 # type() - sprawdzenie typu danych
 print(type("Radek"))  # <class 'str'> string tekstowe
 
-print("38" + "90")  # 3890
+print("38" + "90")  # 3890, konkatenacja, łączenie tekstów
 print("Radek " + "1")  # Radek 1
 
 print(39 + 90)  # 129
@@ -53,3 +53,9 @@ print(sys.int_info)
 # sizeof_digit=4,
 # default_max_str_digits=4300,
 # str_digits_check_threshold=640)
+
+# print("39" + 30)  # TypeError: can only concatenate str (not "int") to str
+
+# rzutowanie typów int(), str()
+print(int("39") + 30)  # 69
+print("39" + str(30))  # 3930
