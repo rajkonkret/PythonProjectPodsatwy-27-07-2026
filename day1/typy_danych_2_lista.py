@@ -47,7 +47,37 @@ print(lista[-2])  # Darek
 print(lista[0:3])  # ['Radek', 'Tomek', 'Zenek'] bez indeksu 3
 print(lista[:3])  # ['Radek', 'Tomek', 'Zenek']
 
-print(lista[2:])  # ['Zenek', 'Anna', 'Darek', 'Kasia']
+print(lista[2:])  # ['Zenek', 'Anna', 'Darek', 'Kasia'] włącznie z ostatnim
 print(lista[2:5])  # ['Zenek', 'Anna', 'Darek']
 
 print(lista[2:10])  # ['Zenek', 'Anna', 'Darek', 'Kasia']
+
+print(lista[15:20])  # [] - pusta lista
+
+print(lista[:])  # ['Radek', 'Tomek', 'Zenek', 'Anna', 'Darek', 'Kasia']
+
+# ['Radek', 'Tomek', 'Zenek', 'Anna', 'Darek', 'Kasia']
+#    0         1        2        3       4         5
+#    -6        -5       -4       -3      -2        -1
+
+a = None
+b = None
+print(lista[a:b])
+# ['Radek', 'Tomek', 'Zenek', 'Anna', 'Darek', 'Kasia']
+
+print(lista[-2:0])  # [], [4:0]
+print(lista[-2:-2])  # [], [4:4]
+print(lista[0:-2])  # [0:4] # ['Radek', 'Tomek', 'Zenek', 'Anna'] [-6:-2]
+
+# 0 do 14
+lista_15 = list(range(15))  # od 0 do 14
+print(lista_15)
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+print(lista_15[::2])  # [start:stop:krok], [0, 2, 4, 6, 8, 10, 12, 14]
+print(lista_15[::3])  # [start:stop:krok], [0, 3, 6, 9, 12]
+
+print(lista_15[::-1])  # odwrotna kolejność
+# [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+print(list(range(5, 15, 2)))  # [5, 7, 9, 11, 13] (start, stop, krok)
