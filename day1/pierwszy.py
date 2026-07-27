@@ -99,3 +99,12 @@ print(type(name))  # <class 'int'>
 # mypy, pyright, ruff
 # pip - menadzer pakietów
 # pip install mypy
+# cd day1\
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonProjectPodsatwy-27-07-2026\day1> mypy .\pierwszy.py
+# pierwszy.py:74: error: Incompatible types in assignment (expression has type "str", variable has type "int")  [assignment]
+# pierwszy.py:78: error: Incompatible types in assignment (expression has type "str", variable has type "int")  [assignment]
+# pierwszy.py:91: error: Name "name" already defined on line 65  [no-redef]
+# pierwszy.py:95: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+# Found 4 errors in 1 file (checked 1 source file)
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonProjectPodsatwy-27-07-2026\day1>
+# mypy .\pierwszy.py
