@@ -94,3 +94,4 @@ print(lista1)  # [1, 2, 3, 5, 6, 7, 8]
 tablice = [[1, 2], [3, 4]]
 print(tablice)  # [[1, 2], [3, 4]]
 # numpy - biblioteka do pracy z tablicami/macierzami
+
