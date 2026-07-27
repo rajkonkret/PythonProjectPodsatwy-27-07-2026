@@ -25,3 +25,13 @@ print("Używamy wersji Pythona %.2f" % 3)  # Używamy wersji Pythona 3.00
 print("Używamy wersji Pythona %.1f" % 3)  # Używamy wersji Pythona 3.0
 print("Używamy wersji Pythona %.0f" % 3.9)  # Używamy wersji Pythona 4 wyswietli zaokrąglone
 print("Używamy wersji Pythona %.f" % 3.9)  # Używamy wersji Pythona 4 wyswietli zaokrąglone
+
+x = 3.8769
+print(x)  # 3.8769
+y = round(x)
+print(y)  # 4
+print(type(y))  # <class 'int'>
+
+z = round(x, 2)
+print(f"{z=}")  # z=3.88
+print(type(z))  # <class 'float'>
