@@ -108,3 +108,18 @@ print(not False)
 # ------------------------------
 # False
 # True
+
+a = 6
+b = 9
+
+# >, <, >=, <=
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 6 > 9 = False
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 6 < 9 = True
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 6 >= 9 = False
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 6 <= 9 = True
+
+print(f"Porównanie {a <= b = }")  # Porównanie a <= b = True
+
+print(f"Porównanie {a} == {b} = {a == b}")  # czy są równe: Porównanie 6 == 9 = False
+print(f"Porównanie {a} != {b} = {a != b}")  # czy są ró ż ne: Porównanie 6 != 9 = True
