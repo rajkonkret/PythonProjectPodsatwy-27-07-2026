@@ -81,3 +81,16 @@ print(lista_15[::-1])  # odwrotna kolejność
 # [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 print(list(range(5, 15, 2)))  # [5, 7, 9, 11, 13] (start, stop, krok)
+
+lista1 = [1, 2, 3]
+lista2 = [7, 8, 9]
+print(lista1 + lista2)  # [1, 2, 3, 7, 8, 9]
+# lista1.append(list(range(5, 9)))
+# print(lista1) # [1, 2, 3, [5, 6, 7, 8]]
+lista1.extend(list(range(5, 9)))
+print(lista1)  # [1, 2, 3, 5, 6, 7, 8]
+
+# python nie ma typu danych tablica (array)
+tablice = [[1, 2], [3, 4]]
+print(tablice)  # [[1, 2], [3, 4]]
+# numpy - biblioteka do pracy z tablicami/macierzami
