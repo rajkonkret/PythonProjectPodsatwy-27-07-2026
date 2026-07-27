@@ -12,3 +12,7 @@ print("Witaj %s, masz teraz %d lat." % (user, wiek))
 
 # print("Witaj %d, masz teraz %s lat." % (user, wiek))
 # TypeError: %d format: a real number is required, not str
+
+# f-string
+print(f"Witaj {user}, masz teraz {wiek} lat.")
+# Witaj Tomek, masz teraz 45 lat.
