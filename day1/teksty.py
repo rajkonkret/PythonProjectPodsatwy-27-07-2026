@@ -13,3 +13,26 @@ print(tekst.upper())  # WITAJ ŚWIECIE
 tekst_upper = tekst.upper()
 print(tekst_upper)  # WITAJ ŚWIECIE
 print(tekst)  # Witaj Świecie - oryginał sie nie zmieni!
+
+print(tekst.lower())  # witaj świecie
+print(tekst.capitalize())  # Witaj świecie
+print(tekst.title())  # Witaj Świecie
+
+print(tekst)  # Witaj Świecie
+print(len(tekst))  # 13 liter len() - długość tekstu
+
+# Witaj Świecie
+# 01234556789.... numerowane od zera
+
+print(tekst[1])  # i
+print(tekst[3])  # a
+print(tekst[6])  # Ś
+
+print(tekst.index("Ś"))  # index  6
+
+# "e"
+print(tekst.index("e"))  # index 9, pierwsza od lewej
+print(tekst.count("e"))  # występuje 2 razy
+
+# "w"
+print(tekst.lower().count("w"))  # występuje 2 razy
