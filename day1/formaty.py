@@ -16,3 +16,12 @@ print("Witaj %s, masz teraz %d lat." % (user, wiek))
 # f-string
 print(f"Witaj {user}, masz teraz {wiek} lat.")
 # Witaj Tomek, masz teraz 45 lat.
+
+# %i, %f
+
+print("Używamy wersji Pythona %i" % 3)  # Używamy wersji Pythona 3
+print("Używamy wersji Pythona %f" % 3)  # Używamy wersji Pythona 3.000000
+print("Używamy wersji Pythona %.2f" % 3)  # Używamy wersji Pythona 3.00
+print("Używamy wersji Pythona %.1f" % 3)  # Używamy wersji Pythona 3.0
+print("Używamy wersji Pythona %.0f" % 3.9)  # Używamy wersji Pythona 4 wyswietli zaokrąglone
+print("Używamy wersji Pythona %.f" % 3.9)  # Używamy wersji Pythona 4 wyswietli zaokrąglone
