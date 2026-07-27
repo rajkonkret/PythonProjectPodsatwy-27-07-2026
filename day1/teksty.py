@@ -60,4 +60,21 @@ print(type(encode_s))  # <class 'bytes'>
 
 print(encode_s.decode('utf-8'))  # Witaj Świecie
 
+imie = "Radek"
+print(len(imie))  # długosc 5
 
+# Mam na imię ...
+print("Mam na imię " + imie + ".")  # Mam na imię Radek.
+
+# f-string, wstrzyknięcie zawartości zmiennej do tekstu
+tekst_format = f"Mam na imię {imie} i lubie Pythona."
+print(tekst_format)
+# Mam na imię Radek i lubie Pythona.
+
+tekst_format = f"\tMam na imię {imie}\n i lubie Pythona.\b"
+print(tekst_format)
+# "	Mam na imię Radek
+#  i lubie Pythona"
+# \t tabulator
+# \n nowa linia
+# \b - backspace
