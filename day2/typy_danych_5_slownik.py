@@ -56,4 +56,9 @@ print("\u00DF")  # ß
 # \N{name} - Znak Unicode o podanej nazwie
 print("\N{LATIN SMALL LETTER SHARP S}")  # ß
 
+name1 = "GROSS"
+name2 = "groß"
 
+print(name1.lower() == name2.lower())  # False
+"""Return a version of the string suitable for caseless comparisons."""
+print(name1.casefold() == name2.casefold())  # True
