@@ -45,3 +45,9 @@ print("Zmienna:", zmienna)  # Zmienna: 66
 zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
 print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
 print(type(zbior_2))  # <class 'set'>
+
+# operacje na zbiorach
+
+# suma zbiorów
+print(zbior | zbior_2)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
+print(zbior.union(zbior_2))  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
