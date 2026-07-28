@@ -81,3 +81,9 @@ print(dict_small)  # {'x': 20, 'y': 3, 'z': 8}
 # pobrac a od uzytkownika
 # pobrac b od uzytkownika
 # wypisc wynik dodawania a + b
+a = int(input("podaj a:"))  # zwraca str
+b = input("podaj b:")
+print(int(a) + float(b))
+# podaj a:4
+# podaj b:5
+# 9.0
