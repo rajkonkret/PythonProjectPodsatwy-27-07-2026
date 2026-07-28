@@ -110,10 +110,18 @@ print(lista)
 # sprawdzenie indexu
 print(lista.index("Darek"))  # indeks numer 5
 
-# usnięcie elementu z listy
+# usnięcie elementu z listy,  pierwszy napotkany
 lista.remove("Tomek")
 print(lista)
 # ['Radek', 'Ola', 'Alicja', 'Anna', 'Darek', 'Kasia']
 
 # dodac do listy (taki element jak juz jest)
 # usunąć taki element
+
+lista.append("Anna")
+print(lista)
+# ['Radek', 'Ola', 'Alicja', 'Anna', 'Darek', 'Kasia', 'Anna']
+
+lista.remove("Anna")
+print(lista)
+# ['Radek', 'Ola', 'Alicja', 'Darek', 'Kasia', 'Anna']
