@@ -83,5 +83,5 @@ print(767 in krotka)  # False
 print(zbior)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
 print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
 zbior.difference_update(zbior_2)
-print(zbior)  # {777, 22, 24, 25} - nadpisane częścią wspólną
+print(zbior)  # {777, 22, 24, 25} - nadpisane częścią róznicą
 print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
