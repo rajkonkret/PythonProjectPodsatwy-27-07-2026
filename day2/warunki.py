@@ -144,12 +144,26 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # zmienna: typ_sytemu -> console, email, inny
 # console: "Stało się coś strasznego!"
 # email: "System email"
+# -----
+# jesli system jest email to:
+# do listy błeddó dopisac tłumaczenie błedów
+# error_level -> error, medium, inny
 
-alert_system = "email"
+lista_b = []
+alert_system = "console"
+error_level = "error"
 
 if alert_system == "console":
     print("Stało się coś strasznego!")
 elif alert_system == 'email':
     print("System email")
+    if error_level == "error":
+        lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inny")
 else:
     print("Inny system")
+
+print(lista_b)
