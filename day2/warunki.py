@@ -67,3 +67,8 @@ if n > 3:
 # operator morsa, walrus operator
 if (n := len(a)) > 3:
     print(f"Długość wynosi: {n}, więcej niż 3.")
+
+# pobrac zarobki
+# jesli zarobki mniejsze od 10000 podatek 0
+# dla pozostałych podatek 90% (0.9)
+# wypisac obliczony podatek
