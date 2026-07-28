@@ -223,3 +223,7 @@ print(lista)  # ['Pyth on .']
 lista_tekst = list(tekst)
 print(lista_tekst)
 # ['P', 'y', 't', 'h', ' ', 'o', 'n', ' ', '.']
+
+krotka = tuple(lista_copy)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Tomek', 'Radek', 'Ola', 'Darek')
