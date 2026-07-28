@@ -125,3 +125,15 @@ print(lista)
 lista.remove("Anna")
 print(lista)
 # ['Radek', 'Ola', 'Alicja', 'Darek', 'Kasia', 'Anna']
+
+# usunięcie po indeksie, zwraca usuniety element
+# pop()
+print(lista.pop(2))  # Alicja
+print(lista)
+# ['Radek', 'Ola', 'Darek', 'Kasia', 'Anna']
+
+zmienna = lista.pop(-1)
+print(zmienna)  # Anna
+print(lista)  # ['Radek', 'Ola', 'Darek', 'Kasia']
+
+print(lista.pop())  # usunie ostatni element
