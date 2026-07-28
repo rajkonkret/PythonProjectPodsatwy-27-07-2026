@@ -91,13 +91,13 @@ print(dict_small)  # {'x': 20, 'y': 3, 'z': 8}
 # napisac program słownik pol-ang
 pol_ang = {'pies': "dog", "kot": "cat", "dach": 'roof'}
 print("Znam takie słowa:", pol_ang.keys())
-odp = input("Podaj słóko do przetłumaczenia: ")
+odp = input("Podaj słówko do przetłumaczenia: ")
 print(f"""
 Prawidłowa odpowiedź dla: {odp}
 to: {pol_ang.get(odp.strip().casefold(), "Nie ma takiego słowa w słowniku")}
 """)
 # Znam takie słowa: dict_keys(['pies', 'kot', 'dach'])
-# Podaj słóko do przetłumaczenia: pies
+# Podaj słówko do przetłumaczenia: pies
 #
 # Prawidłowa odpowiedź dla: pies
 # to: dog
