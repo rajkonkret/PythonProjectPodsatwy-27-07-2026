@@ -107,3 +107,21 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # napisac test z...
 #  trzy pytania
 # punktacja za prawidłową odpowiedź
+
+odp = input("Podaj imię trenera: ")
+if odp.strip().casefold() == "Radek".casefold():
+    print('Opowiedź prawidłowa')
+else:
+    print("Śpisz?!!!")
+
+odp = input("Która drużyna wygrała Mundial 2026: ")
+if odp.strip().casefold() == "Hiszpania".casefold():
+    print('Opowiedź prawidłowa')
+else:
+    print('Sprawdz w internecie')
+
+odp = input("Jaki Król jest na banknocie 200 zł: ")
+if odp.strip().casefold() == "Zygmunt".casefold():
+    print('Opowiedź prawidłowa')
+else:
+    print("Zerknij do portfela.")
