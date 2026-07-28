@@ -199,3 +199,9 @@ print(lista_copy)  # ['Darek', 'Ola', 'Radek', 'Tomek']
 
 lista_copy.sort(reverse=True)
 print(lista_copy)  # ['Tomek', 'Radek', 'Ola', 'Darek']
+
+# wypisac liczby
+# nadpisac czwarty element inna liczbą
+# wyciągnąc elementy od pierwszego do trzeciego włącznie
+# wypisac po indeksie dodatnim i ujemnym
+
