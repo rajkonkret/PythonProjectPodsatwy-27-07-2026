@@ -69,3 +69,8 @@ print(dictionary)  # {'imie': ['Radek', 'Tomek', 'Magda'], 'wiek': 56, 'data': '
 dict_small = {'x': 20}
 dict_small.update([('y', 3), ('z', 8)])
 print(dict_small)  # {'x': 20, 'y': 3, 'z': 8}
+
+# input() - możliwośc w prowadzania danych do komputera np.: z klawiatury
+
+tekst = input("Podaj imię:")
+print(tekst)
