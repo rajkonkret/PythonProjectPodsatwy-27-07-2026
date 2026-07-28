@@ -36,3 +36,7 @@ dictionary['imie'] = ["Radek", "Tomek", "Magda"]
 print(dictionary)  # {'imie': ['Radek', 'Tomek', 'Magda'], 'wiek': 56}
 
 # wypisac Tomek
+print(dictionary['imie'][1])  # Tomek
+
+print(dictionary['imie'][1].lower())  # tomek
+print(dictionary['imie'][::-1])  # ['Magda', 'Tomek', 'Radek']
