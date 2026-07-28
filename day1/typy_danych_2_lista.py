@@ -137,3 +137,30 @@ print(zmienna)  # Anna
 print(lista)  # ['Radek', 'Ola', 'Darek', 'Kasia']
 
 print(lista.pop())  # usunie ostatni element
+
+# typy proste
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
+
+# kolekcje
+
+lista2 = lista  # kopia referencji, adresu
+print(lista)  # ['Radek', 'Ola', 'Darek']
+print(lista2)  # ['Radek', 'Ola', 'Darek']
+
+lista_copy = lista.copy()  # kopia listy w nowym miejscu
+
+lista.clear()  # usunięcie wszystkich elementów z listy
+print(lista)  # []
+print(lista2)  # []
+print(lista_copy)  # ['Radek', 'Ola', 'Darek']
+
+# id()
+print(id(lista))  # 2305929301952
+print(id(lista2))  # 2305929301952
+print(id(lista_copy))  # 1881582414144
