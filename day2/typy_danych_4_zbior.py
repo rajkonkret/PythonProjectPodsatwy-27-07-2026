@@ -34,3 +34,14 @@ print(zbior)
 # usunięcie elementu ze zbioru
 zbior.remove(55)  # wartość elementu
 print(zbior)  # {33, 66, 777, 11, 44, 18, 22, 24, 25}
+
+# pop()
+print(zbior.pop())  # 33 - usunie pierwszy
+
+zmienna = zbior.pop()
+print(f"Zmienna: {zmienna}")  # Zmienna: 66
+print("Zmienna:", zmienna)  # Zmienna: 66
+
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
+print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
+print(type(zbior_2))  # <class 'set'>
