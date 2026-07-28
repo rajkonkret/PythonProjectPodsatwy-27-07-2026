@@ -145,3 +145,11 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # console: "Stało się coś strasznego!"
 # email: "System email"
 
+alert_system = "email"
+
+if alert_system == "console":
+    print("Stało się coś strasznego!")
+elif alert_system == 'email':
+    print("System email")
+else:
+    print("Inny system")
