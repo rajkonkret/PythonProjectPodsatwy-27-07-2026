@@ -108,34 +108,40 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 #  trzy pytania
 # punktacja za prawidłową odpowiedź
 
-punkty = 0
-
-odp = input("Podaj imię trenera: ")
-if odp.strip().casefold() == "Radek".casefold():
-    print('Opowiedź prawidłowa')
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Śpisz?!!!")
-
-odp = input("Która drużyna wygrała Mundial 2026: ")
-if odp.strip().casefold() == "Hiszpania".casefold():
-    print('Opowiedź prawidłowa')
-    punkty += 1
-else:
-    print('Sprawdz w internecie')
-
-odp = input("Jaki Król jest na banknocie 200 zł: ")
-if odp.strip().casefold() == "Zygmunt".casefold():
-    print('Opowiedź prawidłowa')
-    punkty += 1
-else:
-    print("Zerknij do portfela.")
-
-print("Punkty:", punkty)
+# punkty = 0
+#
+# odp = input("Podaj imię trenera: ")
+# if odp.strip().casefold() == "Radek".casefold():
+#     print('Opowiedź prawidłowa')
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Śpisz?!!!")
+#
+# odp = input("Która drużyna wygrała Mundial 2026: ")
+# if odp.strip().casefold() == "Hiszpania".casefold():
+#     print('Opowiedź prawidłowa')
+#     punkty += 1
+# else:
+#     print('Sprawdz w internecie')
+#
+# odp = input("Jaki Król jest na banknocie 200 zł: ")
+# if odp.strip().casefold() == "Zygmunt".casefold():
+#     print('Opowiedź prawidłowa')
+#     punkty += 1
+# else:
+#     print("Zerknij do portfela.")
+#
+# print("Punkty:", punkty)
 #
 # spam += 1    spam = spam + 1
 # spam -= 1    spam = spam - 1
 # spam *= 1    spam = spam * 1
 # spam /= 1    spam = spam / 1
 # spam %= 1    spam = spam % 1
+
+# zasymulejmy system zbierania logów
+# zmienna: typ_sytemu -> console, email, inny
+# console: "Stało się coś strasznego!"
+# email: "System email"
+
