@@ -75,19 +75,31 @@ if (n := len(a)) > 3:
 
 # dodaj podatek 0.2 dla przedziału 10_000 do 39999
 # dodaj podatek 0.4 dla przedzialu 40000 do 99999
-zarobki = int(input("Podaj zarobki: "))
-podatek = 0
-
-# tylko jeden warunek może być spełniony
-if zarobki < 10_000:
-    podatek = 0
-elif zarobki < 40_000:
-    podatek = 0.2
-elif zarobki < 100_000:
-    podatek = 0.4
-else:
-    podatek = 0.9
-
-print(f"Podatek wynosi: {zarobki * podatek} pln.")
-# Podaj zarobki: 125000
+# zarobki = int(input("Podaj zarobki: "))
+# podatek = 0
+#
+# # tylko jeden warunek może być spełniony
+# if zarobki < 10_000:
+#     podatek = 0
+# elif zarobki < 40_000:
+#     podatek = 0.2
+# elif zarobki < 100_000:
+#     podatek = 0.4
+# else:
+#     podatek = 0.9
+#
+# print(f"Podatek wynosi: {zarobki * podatek} pln.")
+# # Podaj zarobki: 125000
 # Podatek wynosi: 112500.0 pln.
+
+sum_zam = 150
+if sum_zam > 100:
+    rabat = 25
+else:
+    rabat = 0
+
+print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
+
+# operator warunkowe
+rabat = 25 if sum_zam > 100 else 0
+print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
