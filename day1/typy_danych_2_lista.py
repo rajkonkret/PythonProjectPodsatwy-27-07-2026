@@ -164,3 +164,38 @@ print(lista_copy)  # ['Radek', 'Ola', 'Darek']
 print(id(lista))  # 2305929301952
 print(id(lista2))  # 2305929301952
 print(id(lista_copy))  # 1881582414144
+
+lista3 = lista_copy.copy()
+print(lista3)
+del lista3  # usunięcie z pamięci
+
+# print(lista3) # NameError: name 'lista3' is not defined. Did you mean: 'lista'?
+
+liczby = [54, 999, 12.34, 34, 567, 999]
+print(type(liczby))  # <class 'list'>
+print(liczby)  # [54, 999, 12.34, 34, 567, 999]
+
+liczby.sort()
+print(liczby)  # [12.34, 34, 54, 567, 999, 999]
+
+liczby.append("A")
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+
+# liczby.sort()
+# TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(ord("A"))  # 65 kod znaku w ascii
+# print(ord("AB")) # TypeError: ord() expected a character, but string of length 2 found
+
+print(chr(65))  # A
+
+print(lista_copy)
+# ['Radek', 'Ola', 'Darek']
+lista_copy.sort()
+print(lista_copy)  # ['Darek', 'Ola', 'Radek']
+
+lista_copy.append("Tomek")
+print(lista_copy)  # ['Darek', 'Ola', 'Radek', 'Tomek']
+
+lista_copy.sort(reverse=True)
+print(lista_copy)  # ['Tomek', 'Radek', 'Ola', 'Darek']
