@@ -49,3 +49,11 @@ print(dictionary_radek['Imie'.lower()])  # ['Radek', 'Tomek', 'Magda']
 
 print(dictionary_radek.get("Imie"))  # None
 print(dictionary_radek.get("Imie", "default"))  # default
+
+print(chr(223))  # ß -> ss
+# \xhh - Znak o wartości szesnastkowej (np. \x0A reprezentuje znak nowej linii)
+print("\u00DF")  # ß
+# \N{name} - Znak Unicode o podanej nazwie
+print("\N{LATIN SMALL LETTER SHARP S}")  # ß
+
+
