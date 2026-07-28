@@ -30,3 +30,7 @@ zbior.add(33)
 zbior.add(25)
 print(zbior)
 # {33, 66, 777, 11, 44, 18, 22, 55, 24, 25}
+
+# usunięcie elementu ze zbioru
+zbior.remove(55)  # wartość elementu
+print(zbior)  # {33, 66, 777, 11, 44, 18, 22, 24, 25}
