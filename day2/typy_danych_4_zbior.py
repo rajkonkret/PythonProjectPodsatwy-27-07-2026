@@ -65,4 +65,23 @@ print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
 zbior.update(zbior_2)
 print(zbior)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62} zmienił się bazowy zbior!!!
 
+krotka = tuple(zbior)
+print(krotka)  # (777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62)
+print(type(tuple))  # <class 'type'>
 
+lista = list(zbior)
+print(lista)  # [777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62]
+print(type(lista))  # <class 'list'>
+
+# sprawdzenie czy dany element istnieje w kolekcji
+# in
+print(667 in zbior)  # True
+print(667 in lista)  # True
+print(667 in krotka)  # True
+print(767 in krotka)  # False
+
+print(zbior)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
+print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
+zbior.difference_update(zbior_2)
+print(zbior)  # {777, 22, 24, 25} - nadpisane częścią wspólną
+print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
