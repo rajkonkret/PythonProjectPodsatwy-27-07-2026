@@ -204,4 +204,10 @@ print(lista_copy)  # ['Tomek', 'Radek', 'Ola', 'Darek']
 # nadpisac czwarty element inna liczbą
 # wyciągnąc elementy od pierwszego do trzeciego włącznie
 # wypisac po indeksie dodatnim i ujemnym
-
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+liczby[3] = 666
+print(liczby)  # [12.34, 34, 54, 666, 999, 999, 'A']
+print(liczby[0:3])  # [12.34, 34, 54]
+print(liczby[-3])  # 999
+print(liczby[3])  # 666
+print(liczby[-3:])  # [999, 999, 'A']
