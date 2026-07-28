@@ -10,10 +10,28 @@
 
 # obsługa wyjątków
 try:
-    print(5 / 0)
+    # print(5 / 0)
+    # int("Q")
+    # print(2 + 'Ania')
+    # raise KeyError("Błąd kluczy")  # rzuci bład
+    wynik = 90 / 3
 except ZeroDivisionError:
     print("Nie można dzielic przez zero!!!")
+except ValueError:
+    print("Bład wartości")
+except TypeError:
+    print("Bład typu")
+except Exception as e:
+    print("Bład:", e)
+else:  # tylko gdy  nie ma błedu
+    print("wynik:", wynik)
+finally:  # wykona się zawsze
+    print("Następne obliczenie")
 
+# print("wynik:", wynik)
 print("Dalsza częśc...")
 # Nie można dzielic przez zero!!!
+# Dalsza częśc...
+
+# Bład: 'Błąd kluczy'
 # Dalsza częśc...
