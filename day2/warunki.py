@@ -57,3 +57,13 @@ a = "Radek"
 # jezeli długosć tekstu jest większa niz 3 wypisac:
 # Długość wynosi: ..., więcej niż 3.
 
+if len(a) > 3:
+    print(f"Długość wynosi: {len(a)}, więcej niż 3.")
+
+n = len(a)
+if n > 3:
+    print(f"Długość wynosi: {n}, więcej niż 3.")
+
+# operator morsa, walrus operator
+if (n := len(a)) > 3:
+    print(f"Długość wynosi: {n}, więcej niż 3.")
