@@ -211,3 +211,15 @@ print(liczby[0:3])  # [12.34, 34, 54]
 print(liczby[-3])  # 999
 print(liczby[3])  # 666
 print(liczby[-3:])  # [999, 999, 'A']
+
+# list(), []
+
+tekst = "Pyth on ."
+
+lista = [tekst]
+print(lista)  # ['Pyth on .']
+
+# rozpakowanie sekwencji
+lista_tekst = list(tekst)
+print(lista_tekst)
+# ['P', 'y', 't', 'h', ' ', 'o', 'n', ' ', '.']
