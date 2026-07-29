@@ -18,3 +18,20 @@ licznik = 0
 while licznik < 10:
     licznik += 1
     print("Komunikt 3 !!!")
+
+# password = input("Podaj hasło:")
+# while password != "secret":  # != - rózne
+#     password = input("Podaj hasło")
+# Podaj hasło:asadasd
+# Podaj hasłoaSasasds
+# Podaj hasłowqeqweqwwqe
+# Podaj hasłosecret
+
+while (password := input("Podaj hasło:")) != "secret":
+    pass
+# Podaj hasło:asasdas
+# Podaj hasło:secret
+
+my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
+# usunąć wszystkie 5 z listy
+
