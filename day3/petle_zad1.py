@@ -194,3 +194,5 @@ for o, w in zip(imiona, wiek):
 # Tomek 18
 # Zenek 34
 # Basia 20
+
+# 0 Ala 24
