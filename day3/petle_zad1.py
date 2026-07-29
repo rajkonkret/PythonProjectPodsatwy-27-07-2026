@@ -122,3 +122,46 @@ for o in lista_nazwy:
 # Basia
 
 # 0 Ala
+for i in range(len(lista_nazwy)):
+    print(i, lista_nazwy[i])
+# 0 Ala
+# 1 Tomek
+# 2 Zenek
+# 3 Basia
+
+for i in lista_nazwy:
+    print(lista_nazwy.index(i), i)
+# 0 Ala
+# 1 Tomek
+# 2 Zenek
+# 3 Basia
+
+# enumerate() - zwraca numer i element kolekcji
+for p in enumerate(lista_nazwy):
+    print(p)
+# (0, 'Ala')
+# (1, 'Tomek')
+# (2, 'Zenek')
+# (3, 'Basia') -> 3 Basia
+
+a, b = (3, 'Basia')
+print(a, b)  # 3 Basia
+
+for i, o in enumerate(lista_nazwy):
+    print(i, o)
+# 0 Ala
+# 1 Tomek
+# 2 Zenek
+# 3 Basia
+
+for i, o in enumerate(lista_nazwy, start=1):
+    print(i, o)
+# 1 Ala
+# 2 Tomek
+# 3 Zenek
+# 4 Basia
+
+imiona = ["Ala", "Tomek", "Zenek", "Basia"]
+wiek = [24, 18, 34, 20]
+
+# Ala 24
