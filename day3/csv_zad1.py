@@ -41,3 +41,13 @@ products = [
     {'sku': 7, 'exp_date': 'tomorrow', "price": 800},
     {'sku': 8, 'exp_date': 'today', "price": 200.99},
 ]
+
+filename = "records_discount.csv"
+list_products = [key for key in products[0]]
+print(list_products)
+
+with open(filename, "w", newline="") as csv_f:
+    # csv_writer = csv.DictWriter(csv_f, fieldnames=columns)
+    csv_writer = csv.DictWriter(csv_f, fieldnames=products[0].keys())
+    csv_writer.writeheader()
+    csv_writer.writerows(products)  # writerows - dla listy słowników
