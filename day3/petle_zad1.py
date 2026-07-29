@@ -36,3 +36,18 @@ for i in range(10):
 # 4 parzysta
 # 6 parzysta
 # 8 parzysta
+
+# lotto jako pętla
+import random
+
+lista_wyl = []
+
+lista_kul = list(range(1, 50))
+
+for _ in range(6):
+    kula = random.choice(lista_kul)
+    lista_kul.remove(kula)
+    print(kula)
+    lista_wyl.append(kula)
+print(lista_wyl)
+# [6, 43, 11, 14, 44, 18]
