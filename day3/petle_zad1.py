@@ -43,13 +43,15 @@ import random
 lista_wyl = []
 
 lista_kul = list(range(1, 50))
-
-for _ in range(6):
-    kula = random.choice(lista_kul)
-    lista_kul.remove(kula)
-    print(kula)
-    lista_wyl.append(kula)
-print(lista_wyl)
+# 10 losowan
+for losowanie in range(0, 10):
+    for _ in range(6):
+        kula = random.choice(lista_kul)
+        lista_kul.remove(kula)
+        print(kula)
+        lista_wyl.append(kula)
+    print(lista_wyl)
+    print(losowanie, lista_wyl)
 # [6, 43, 11, 14, 44, 18]
 
 # parzyste do listy
