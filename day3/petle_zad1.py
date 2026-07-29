@@ -74,3 +74,6 @@ for c in lista3:  # pod c kolejne elementy z lsity
 # 4
 # 6
 # 8
+
+lista_nazwy = ["Ala", "Tomek", "Zenek", "Basia"]
+
