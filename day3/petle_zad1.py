@@ -196,3 +196,46 @@ for o, w in zip(imiona, wiek):
 # Basia 20
 
 # 0 Ala 24
+for i in enumerate(zip(imiona, wiek)):
+    print(i)
+# (0, ('Ala', 24))
+a, b = (0, ('Ala', 24))
+print(a, b)  # 0 ('Ala', 24)
+c, d = ('Ala', 24)
+print(c, d)  # Ala 24
+
+a, (c, d) = (0, ('Ala', 24))
+for i, (o, w) in enumerate(zip(imiona, wiek)):
+    print(i, o, w)
+# 0 Ala 24
+# 1 Tomek 18
+# 2 Zenek 34
+# 3 Basia 20
+
+print(40 * "-")
+from itertools import zip_longest
+import time
+
+imiona = ["Ala", "Tomek", "Zenek", "Basia", "Radek"]
+wiek = [24, 18, 34, 20]
+
+zipped = zip_longest(imiona, wiek, fillvalue="Brak")
+print(zipped)  # <itertools.zip_longest object at 0x0000020E5E5D4A90>
+
+# z danych mozna skorzystac tylko raz
+# for item in zipped:
+#     print(item)
+# ('Ala', 24)
+# ('Tomek', 18)
+# ('Zenek', 34)
+# ('Basia', 20)
+# ('Radek', 'Brak')
+
+print(50 * "-")
+lista = []
+for o, w in zipped:
+    print(o, w)
+    time.sleep(1)  # czeka 1 sekundę
+    lista.append(o)
+
+print(lista)
