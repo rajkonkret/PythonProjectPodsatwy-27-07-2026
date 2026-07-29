@@ -16,3 +16,7 @@ print(today.year)  # 2026
 formated_date = datetime.now().strftime("%d/%m/%Y")
 print(formated_date)  # 29/07/2026
 print(type(formated_date))  # <class 'str'>
+
+# 14:27
+# 14:27:34
+# 2:27 pm
