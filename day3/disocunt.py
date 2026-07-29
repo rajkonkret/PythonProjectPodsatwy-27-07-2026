@@ -50,3 +50,8 @@ print(type(formated_time_usa))  # <class 'str'>
 object_data = datetime.now().strptime("29/07/2026", "%d/%m/%Y")
 print(object_data)  # 2026-07-29 00:00:00
 print(type(object_data))  # <class 'datetime.datetime'>
+
+# days=0, seconds=0, microseconds=0,
+#                 milliseconds=0, minutes=0, hours=0, weeks=0
+tomorrow = today + timedelta(days=1)
+print(tomorrow)  # 2026-07-30
