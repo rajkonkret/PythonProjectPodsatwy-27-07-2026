@@ -102,3 +102,23 @@ print("Po zakońćzeniu pętli")
 # 8 Większe niż 4
 # 8
 # Po zakońćzeniu pętli
+
+for i in range(-10, 0):
+    print(i)
+
+for i in range(-10, 0, 2):
+    print(i)
+
+for i in range(10, 0, -2):  # (start, stop, krok)
+    print(i)
+
+lista_nazwy = ["Ala", "Tomek", "Zenek", "Basia"]
+
+for o in lista_nazwy:
+    print(o)
+# Ala
+# Tomek
+# Zenek
+# Basia
+
+# 0 Ala
