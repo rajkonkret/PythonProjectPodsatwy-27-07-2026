@@ -22,6 +22,7 @@ with open("test.log", "w") as file:
 with open("test.log", "a") as file:
     file.write("Dodane\n")
     file.write("Dodane\n")
+    file.write("Dśodane\n")
     file.write("Jeszcze jedno\n")
 
 with open("test.log", "r") as f:
