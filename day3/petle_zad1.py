@@ -161,7 +161,20 @@ for i, o in enumerate(lista_nazwy, start=1):
 # 3 Zenek
 # 4 Basia
 
-imiona = ["Ala", "Tomek", "Zenek", "Basia"]
+# imiona = ["Ala", "Tomek", "Zenek", "Basia"]
+imiona = ["Ala", "Tomek", "Zenek", "Basia", "Radek"]
 wiek = [24, 18, 34, 20]
 
 # Ala 24
+
+# dla różnych długości list
+# IndexError: list index out of range
+for i in range(len(imiona)):
+    print(imiona[i], wiek[i])
+
+for i in imiona:
+    print(i, wiek[imiona.index[i]])
+# Ala 24
+# Tomek 18
+# Zenek 34
+# Basia 20
