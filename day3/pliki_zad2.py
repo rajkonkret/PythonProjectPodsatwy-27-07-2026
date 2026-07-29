@@ -43,3 +43,4 @@ print(raw_data.decode(encoding=encoding))
 # Dśąćodane
 # Jeszcze jedno
 # ctrl shift f - wyszukiwanie w projekcie
+# charset-normalizer
