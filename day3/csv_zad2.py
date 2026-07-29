@@ -15,7 +15,8 @@ with open(filename, "r") as csv_f:
     # StopIteration - skończyły się dane
     csv_f.seek(0)  # powrót na początek pliku
 
-    csvreader = csv.reader(csv_f, delimiter=";")
+    # csvreader = csv.reader(csv_f, delimiter=";")
+    csvreader = csv.reader(csv_f, delimiter=dialect.delimiter)
 
     print(csvreader)  # <_csv.reader object at 0x0000017E5AF6C7C0>
 
