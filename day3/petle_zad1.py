@@ -77,3 +77,28 @@ for c in lista3:  # pod c kolejne elementy z lsity
 
 lista_nazwy = ["Ala", "Tomek", "Zenek", "Basia"]
 
+for p in lista_nazwy:
+    print(p)
+
+# Ala
+# Tomek
+# Zenek
+# Basia
+
+for c in lista3:
+    if c > 4:
+        print(c, "Większe niż 4")
+    elif c == 4:
+        print(c, "Równa 4")
+    else:
+        print(c, "Mniejsze niż 4")
+    print(c)  # za każdym przejściem pętli
+
+print("Po zakońćzeniu pętli")
+# 4 Równa 4
+# 4
+# 6 Większe niż 4
+# 6
+# 8 Większe niż 4
+# 8
+# Po zakońćzeniu pętli
