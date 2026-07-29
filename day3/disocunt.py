@@ -13,3 +13,6 @@ print(today.day)  # 29
 print(today.year)  # 2026
 
 # formatowanie date
+formated_date = datetime.now().strftime("%d/%m/%Y")
+print(formated_date)  # 29/07/2026
+print(type(formated_date))  # <class 'str'>
