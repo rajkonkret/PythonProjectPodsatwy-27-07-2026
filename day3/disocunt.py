@@ -74,7 +74,13 @@ for p in products:
     # print(p['exp_date'])
 
     # if p['exp_date'] == today:
-    #     pass
+    #     print(p['price'])
+    #     p['price'] *= 0.8  # price = price * 0.8
+    #
+    #     print(f"""
+    #     Price for sku: {p['sku']}
+    #     is now: {p['price']:.2f}
+    #     """)
 
     if p['exp_date'] != today:
         continue  # konczy bieżące wykonanie pętli, pobiera kolejny eleement
