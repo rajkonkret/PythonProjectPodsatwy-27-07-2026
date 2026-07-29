@@ -51,3 +51,26 @@ for _ in range(6):
     lista_wyl.append(kula)
 print(lista_wyl)
 # [6, 43, 11, 14, 44, 18]
+
+# parzyste do listy
+lista3 = []
+for i in range(10):
+    if i % 2 == 0:
+        lista3.append(i)
+print(lista3)
+
+# list comprehensions
+lista3 = [j for j in range(10) if j % 2 == 0]
+print(lista3)  # [0, 2, 4, 6, 8]
+
+# wypisac elementy z listy za pomoca for
+for i in range(len(lista3)):  # pod i mamy index
+    print(lista3[i])
+
+for c in lista3:  # pod c kolejne elementy z lsity
+    print(c)
+# 0
+# 2
+# 4
+# 6
+# 8
