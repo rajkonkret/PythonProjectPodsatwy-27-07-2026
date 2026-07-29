@@ -20,6 +20,7 @@ while True:
         a = float(input("podaj pierwszą liczbę:"))
         b = float(input("podaj drugą liczbę:"))
 
+        # match case
         if odp == "1":
             print(f"Dodawanie: {a} + {b} = {a + b}")
         elif odp == "2":
