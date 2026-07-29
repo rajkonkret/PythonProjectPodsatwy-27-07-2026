@@ -37,3 +37,16 @@ while True:
         print("Bład:", e)
     finally:
         print("Obliczenia zostały wykonane")
+
+print(50 * "-")
+a = float(input("podaj pierwszą liczbę:"))
+b = float(input("podaj drugą liczbę:"))
+znak = input("Wprowadz znak: (+,-,*,/)")
+wyr = f"{a} {znak} {b}"
+print(eval(wyr))  # wykonuje dowolne wyrażnie zapisane w stringu
+
+# --------------------------------------------------
+# podaj pierwszą liczbę:>? 5
+# podaj drugą liczbę:>? 6
+# Wprowadz znak: (+,-,*,/)>? +
+# 11.0
