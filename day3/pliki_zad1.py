@@ -6,7 +6,7 @@
 # context manager
 # with - context manager w pythonie
 
-with open("test.log", "w") as file:
+with open("test.log", "w", encoding="utf-8") as file:
     file.write("Powitanie\n")
     file.write("Jeszcze jedno\n")
 
@@ -14,18 +14,18 @@ with open("test.log", "w") as file:
 
 # x tworzy nowy plik gdy plik nie istnieje!!!
 # FileExistsError: [Errno 17] File exists: 'test.log'
-# with open("test.log", "x") as file:
+# with open("test.log", "x", encoding="utf-8") as file:
 #     file.write("Powitanie\n")
 #     file.write("Jeszcze jedno\n")
 
 # a - append - dołacza dane na końcu
-with open("test.log", "a") as file:
+with open("test.log", "a", encoding="utf-8") as file:
     file.write("Dodane\n")
     file.write("Dodane\n")
     file.write("Dśodane\n")
     file.write("Jeszcze jedno\n")
 
-with open("test.log", "r") as f:
+with open("test.log", "r", encoding="utf-8") as f:
     lines = f.read()
 
 print(lines)
