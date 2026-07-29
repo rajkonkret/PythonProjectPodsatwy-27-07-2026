@@ -27,11 +27,18 @@ while licznik < 10:
 # Podaj hasłowqeqweqwwqe
 # Podaj hasłosecret
 
-while (password := input("Podaj hasło:")) != "secret":
-    pass
+# while (password := input("Podaj hasło:")) != "secret":
+#     pass
 # Podaj hasło:asasdas
 # Podaj hasło:secret
 
 my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
 # usunąć wszystkie 5 z listy
+number_to_remove = 5
+while number_to_remove in my_list:
+    my_list.remove(number_to_remove)
+
+print(my_list)  # [1, 2, 3, 4, 6]
+
+my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
 
