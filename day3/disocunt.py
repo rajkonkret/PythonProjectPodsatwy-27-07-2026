@@ -37,3 +37,12 @@ print(type(formated_date))  # <class 'str'>
 # %M: Minuty z zerem wiodącym, np. "00" do "59".
 # %S: Sekundy z zerem wiodącym, np. "00" do "59".
 # %f: Mikrosekundy, np. "000000" do "999999".
+
+formated_time = datetime.now().strftime("%H:%M")
+print(formated_time)  # 14:36
+print(type(formated_time))  # <class 'str'>
+
+formated_time_usa = datetime.now().strftime("%I:%M %p")
+print(formated_time_usa)  # 02:37 PM
+print(formated_time_usa.removeprefix("0"))  # 2:38 PM
+print(type(formated_time_usa))  # <class 'str'>
