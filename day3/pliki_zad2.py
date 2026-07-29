@@ -34,3 +34,12 @@ print("Trafność:", confidence)
 # Trafność: 0.8963380281690141
 
 print(50 * "-")
+print(raw_data.decode(encoding=encoding))
+# --------------------------------------------------
+# Powitanie
+# Jeszcze jedno
+# Dodane
+# Dodane
+# Dśąćodane
+# Jeszcze jedno
+# ctrl shift f - wyszukiwanie w projekcie
