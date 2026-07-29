@@ -68,3 +68,49 @@ products = [
     {'sku': 7, 'exp_date': tomorrow, "price": 800},
     {'sku': 8, 'exp_date': today, "price": 200.99},
 ]
+
+for p in products:
+    # print(p)  # {'sku': 5, 'exp_date': datetime.date(2026, 7, 29), 'price': 250}
+    # print(p['exp_date'])
+
+    # if p['exp_date'] == today:
+    #     pass
+
+    if p['exp_date'] != today:
+        continue  # konczy bieżące wykonanie pętli, pobiera kolejny eleement
+
+    print(p['price'])
+    p['price'] *= 0.8  # price = price * 0.8
+
+    print(f"""
+Price for sku: {p['sku']}
+is now: {p['price']:.2f}
+""")
+
+# Price for sku: 1
+# is now: 160.00
+#
+# 300
+#
+# Price for sku: 2
+# is now: 240.00
+#
+# 200
+#
+# Price for sku: 3
+# is now: 160.00
+#
+# 250
+#
+# Price for sku: 5
+# is now: 200.00
+#
+# 1200
+#
+# Price for sku: 6
+# is now: 960.00
+#
+# 200.99
+#
+# Price for sku: 8
+# is now: 160.79
