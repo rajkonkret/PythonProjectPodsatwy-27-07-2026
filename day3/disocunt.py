@@ -10,6 +10,8 @@ print(type(today))  # <class 'datetime.date'>
 print(type(time))  # <class 'datetime.datetime'>
 
 print(today.day)  # 29
+print(today.weekday())  # 2 - środa
+print(today.isoweekday())  # 3 - środa
 print(today.year)  # 2026
 
 # formatowanie date
@@ -55,3 +57,14 @@ print(type(object_data))  # <class 'datetime.datetime'>
 #                 milliseconds=0, minutes=0, hours=0, weeks=0
 tomorrow = today + timedelta(days=1)
 print(tomorrow)  # 2026-07-30
+
+products = [
+    {'sku': 1, 'exp_date': today, "price": 200},
+    {'sku': 2, 'exp_date': today, "price": 300},
+    {'sku': 3, 'exp_date': today, "price": 200},
+    {'sku': 4, 'exp_date': tomorrow, "price": 400},
+    {'sku': 5, 'exp_date': today, "price": 250},
+    {'sku': 6, 'exp_date': today, "price": 1200},
+    {'sku': 7, 'exp_date': tomorrow, "price": 800},
+    {'sku': 8, 'exp_date': today, "price": 200.99},
+]
