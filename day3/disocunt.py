@@ -46,3 +46,7 @@ formated_time_usa = datetime.now().strftime("%I:%M %p")
 print(formated_time_usa)  # 02:37 PM
 print(formated_time_usa.removeprefix("0"))  # 2:38 PM
 print(type(formated_time_usa))  # <class 'str'>
+
+object_data = datetime.now().strptime("29/07/2026", "%d/%m/%Y")
+print(object_data)  # 2026-07-29 00:00:00
+print(type(object_data))  # <class 'datetime.datetime'>
