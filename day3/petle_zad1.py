@@ -186,3 +186,11 @@ for i in zip(imiona, wiek):
 # ('Tomek', 18)
 # ('Zenek', 34)
 # ('Basia', 20)
+
+for o, w in zip(imiona, wiek):
+    # for o, w in zip(imiona, wiek, strict=True): # ValueError: zip() argument 2 is shorter than argument 1
+    print(o, w)
+# Ala 24
+# Tomek 18
+# Zenek 34
+# Basia 20
