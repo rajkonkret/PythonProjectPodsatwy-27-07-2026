@@ -36,3 +36,10 @@ print(oblicz_vat(vat=15, kwota=1000))
 # 1230.0
 # 1080.0
 # 1150.0
+
+zm = oblicz_vat(1000)
+if zm == 1230:
+    print("Ok")  # Ok
+
+print(dodaj() + odejmij(1, 4, 6))  # 98
+#      107            -9
