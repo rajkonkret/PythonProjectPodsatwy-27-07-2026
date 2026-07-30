@@ -23,6 +23,17 @@ class Human:
     def wypisz_wzrost(self):
         print(f"Mam {self.wzrost} cm wzrostu.")
 
+    def powitanie(self):
+        print(f"NAzywam się: {self.imie}")
+        # self - przechowuje obiekt
+
+    def ruszaj(self):
+
+        if self.plec == "m":
+            print("Ruszyłem w drogę")
+        else:
+            print("Ruszyłam w drogę")
+
     def __str__(self) -> str:
         return f"{self.imie=}, {self.wiek=} {self.plec=} {self.wzrost=}"
 
