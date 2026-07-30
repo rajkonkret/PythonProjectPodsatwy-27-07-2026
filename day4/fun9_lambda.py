@@ -26,3 +26,7 @@ print(wiek(10))  # nastolatek
 print(wiek(17))  # nastolatek
 print(wiek(18))  # dorosły
 print(wiek(25))  # dorosły
+
+lista = [1, 2, 14, 24, 50, 67, 80, 100, 200, 500]
+
+# stworzyc listę z elementów tej listy pomnożene * 2
