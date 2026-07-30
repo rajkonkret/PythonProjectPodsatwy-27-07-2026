@@ -7,4 +7,13 @@
 # __del__ - destruktor
 # paradygmanty -> hermetyzacja, dziedziczenie, polimorfizm, abstrakcja
 
+# PascalCase, UpperCamelCase
+class Human:
+    # pass
+    """Klasa Human opisująca człowieka w pythonie"""
 
+
+cz1 = Human()
+print(Human.__doc__)  # Klasa Human opisująca człowieka w pythonie
+# cd .. wyjscie do katalogu wyżej
+# cd day4 - wejście do katalogu day4
