@@ -20,28 +20,29 @@ def dodaj2(a, b):  # dwa o bowiązkowe do przekazania argumenty
 def odejmij(a, b, c=0):  # argument o wartości domyślnej
     print(a - b - c)
 
+if __name__ == '__main__':
 
-# wywołanie funkcji
-dodaj()  # 14
-# dodaj2() # TypeError: dodaj2() missing 2 required positional arguments: 'a' and 'b'
+    # wywołanie funkcji
+    dodaj()  # 14
+    # dodaj2() # TypeError: dodaj2() missing 2 required positional arguments: 'a' and 'b'
 
-# argumenty przekazane po pozycji
-dodaj2(4, 9)  # 13
+    # argumenty przekazane po pozycji
+    dodaj2(4, 9)  # 13
 
-odejmij(1, 2, 3)  # -4
-odejmij(1, 2)  # -1
+    odejmij(1, 2, 3)  # -4
+    odejmij(1, 2)  # -1
 
-# argumenty po nazwie
-odejmij(b=9, a=87)  # 78
-odejmij(b=9, a=87, c=90)  # -12
+    # argumenty po nazwie
+    odejmij(b=9, a=87)  # 78
+    odejmij(b=9, a=87, c=90)  # -12
 
-# mieszane
-odejmij(1, 2, c=89)  # -90
-dodaj2(1, b=90)  # 91
+    # mieszane
+    odejmij(1, 2, c=89)  # -90
+    dodaj2(1, b=90)  # 91
 
-# pozycyjne muszą byc przed nazwanymi
-# odejmij(a=10, 1, 2) # SyntaxError: positional argument follows keyword argument
+    # pozycyjne muszą byc przed nazwanymi
+    # odejmij(a=10, 1, 2) # SyntaxError: positional argument follows keyword argument
 
-# print(dodaj() + dodaj2(6, 90))
-#      None       None
-# TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+    # print(dodaj() + dodaj2(6, 90))
+    #      None       None
+    # TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'

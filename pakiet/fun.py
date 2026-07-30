@@ -5,5 +5,5 @@ def powitanie():
 def info():
     print("Numer pakietu: 2.134.56.89")
 
-
-powitanie()  # Cześć
+if __name__ == '__main__':
+    powitanie()  # Cześć
