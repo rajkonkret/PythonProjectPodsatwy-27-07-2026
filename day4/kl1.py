@@ -20,6 +20,16 @@ class Human:
         print(f"NAzywam się: {self.imie}")
         # self - przechowuje obiekt
 
+    def ruszaj(self):
+
+        if self.plec == "m":
+            print("Ruszyłem w drogę")
+        else:
+            print("Ruszyłam w drogę")
+
+    def __str__(self) -> str:
+        return f"{self.imie=}, {self.wiek=} {self.plec=}"
+
     # napisac metode ruszaj()
     # w zależności od płci
     # ruszyłem w drogę
@@ -57,3 +67,23 @@ cz1.powitanie()
 cz2.powitanie()
 # NAzywam się: Anna
 # NAzywam się: Radek
+
+cz1.ruszaj()
+cz2.ruszaj()
+# Ruszyłam w drogę
+# Ruszyłem w drogę
+
+lista = [cz1, cz2]
+for i in lista:
+    i.ruszaj()
+# Ruszyłam w drogę
+# Ruszyłem w drogę
+
+print(50 * "-")
+print(cz1)
+print(cz2)
+# po nadpissaniu __str__
+# __repr__
+# --------------------------------------------------
+# self.imie='Anna', self.wiek=34 self.plec='k'
+# self.imie='Radek', self.wiek=50 self.plec='m'
