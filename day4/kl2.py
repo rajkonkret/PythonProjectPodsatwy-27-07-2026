@@ -33,3 +33,7 @@ class Human:
 cz1 = Human("Radek", 45, 189, "m")
 print(cz1)
 # self.imie='Radek', self.wiek=45 self.plec='m' self.wzrost=189
+cz1.wypisz_wzrost()
+cz1.wypisz_wiek()
+# Mam 189 cm wzrostu.
+# Mam 45 lat.
