@@ -31,3 +31,9 @@ all_params_full(1, 2, 3)  # c=3, d=67
 all_params_full(1, 2, 3, 4, 5, 6, 7)  # args=(4, 5, 6, 7), kwargs={}
 all_params_full(1, 2, 3, 4, 5, 6, 7, d="radek")  # c=3, d='radek'
 all_params_full(1, 2, 3, 4, 5, 6, 7, d="radek", name="Tomek")  # args=(4, 5, 6, 7), kwargs={'name': 'Tomek'}
+
+
+# pydantic v2
+def create_user(user_id, name):
+    if not isinstance(user_id, int):
+        raise TypeError("User id musi byc liczbą")
