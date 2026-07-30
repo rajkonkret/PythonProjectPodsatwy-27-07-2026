@@ -17,3 +17,7 @@ cz1 = Human()
 print(Human.__doc__)  # Klasa Human opisująca człowieka w pythonie
 # cd .. wyjscie do katalogu wyżej
 # cd day4 - wejście do katalogu day4
+# pydoc -b - serwer dokumentacji
+# pydoc -w kl1.py - plik html z dokumentacją
+
+
