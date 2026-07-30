@@ -17,6 +17,11 @@ class Human:
         self.plec = plec
 
     # dopisac metody wypisz_wiek() wypisz_wrost()
+    def wypisz_wiek(self):
+        print(f"Mam {self.wiek} lat.")
+
+    def wypisz_wzrost(self):
+        print(f"Mam {self.wzrost} cm wzrostu.")
 
     def __str__(self) -> str:
         return f"{self.imie=}, {self.wiek=} {self.plec=} {self.wzrost=}"
