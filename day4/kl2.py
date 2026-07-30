@@ -1,0 +1,30 @@
+class Human:
+    """
+    Klasa Human opisująca człowieka w Pythonie
+    """
+
+    def __init__(self, imie, wiek, wzrost, plec="k"):
+        """
+        Metoda inicjalizująca (konstruktor)
+        :param imie:
+        :param wiek:
+        :param wzrost:
+        :param plec:
+        """
+        self.imie = imie
+        self.wiek = wiek
+        self.wzrost = wzrost
+        self.plec = plec
+
+    # dopisac metody wypisz_wiek() wypisz_wrost()
+
+    def __str__(self) -> str:
+        return f"{self.imie=}, {self.wiek=} {self.plec=} {self.wzrost=}"
+
+
+# cz1 = Human()
+# TypeError: Human.__init__() missing 3 required positional arguments: 'imie', 'wiek', and 'wzrost'
+
+cz1 = Human("Radek", 45, 189, "m")
+print(cz1)
+# self.imie='Radek', self.wiek=45 self.plec='m' self.wzrost=189
