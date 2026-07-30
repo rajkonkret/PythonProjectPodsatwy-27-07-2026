@@ -27,6 +27,7 @@ print(wiek(17))  # nastolatek
 print(wiek(18))  # dorosły
 print(wiek(25))  # dorosły
 
+# mapowanie danych
 lista = [1, 2, 14, 24, 50, 67, 80, 100, 200, 500]
 
 # stworzyc listę z elementów tej listy pomnożene * 2
@@ -52,3 +53,18 @@ for i in lista:
     l3.append(zmien(i))
 print(l3)
 # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+# map() - wykonuje funkcje na kolejnych argumentach kolekcji
+# funkcje wyższego rzędu - jako argument przyjmuje inna funkcje
+
+print(f"Zastosowanie map(): {list(map(zmien, lista))}")
+# Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+# lambda jako funkcja anonimowa
+# deklaracja w miejscu wykonania
+print(f"Zastosowanie map(): {list(map(lambda x: x * 2, lista))}")
+# Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+print(f"Zastosowanie map(): {list(map(lambda x: x * 4, lista))}")
+print(f"Zastosowanie map(): {list(map(lambda x: x * 8, lista))}")
+# Zastosowanie map(): [4, 8, 56, 96, 200, 268, 320, 400, 800, 2000]
+# Zastosowanie map(): [8, 16, 112, 192, 400, 536, 640, 800, 1600, 4000]
