@@ -81,3 +81,5 @@ print(f"Zastosowanie filteR(): {list(filter(lambda x: x < 3, lista))}")
 print(f"Zastosowanie filteR(): {list(filter(lambda x: x < 10, lista))}")
 print(f"Zastosowanie filteR(): {list(filter(lambda x: x < 100, lista))}")
 print(f"Zastosowanie filteR(): {list(filter(lambda x: x > 200, lista))}")  # Zastosowanie filteR(): [500]
+
+# wieksze od, 3 mniejsze od 100
