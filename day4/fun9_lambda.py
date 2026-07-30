@@ -15,3 +15,7 @@ print(odejmij2(7, 9))  # -2
 # przerobic na lambdę
 # def oblicz_vat(kwota, vat=23):
 #     return kwota * (100 + vat) / 100
+
+oblicz_vat = lambda kwota, vat=23: kwota * (100 + vat) / 100
+print(oblicz_vat(1000))
+print(oblicz_vat(1000, 15))  # 1150.0
