@@ -48,3 +48,18 @@ cz1.wypisz_wzrost()
 cz1.wypisz_wiek()
 # Mam 189 cm wzrostu.
 # Mam 45 lat.
+cz1.powitanie()
+cz1.ruszaj()
+
+cz2 = Human("Anna", 40, 171)
+print(cz2)
+# self.imie='Anna', self.wiek=40 self.plec='k' self.wzrost=171
+
+cz2.powitanie()
+cz2.wypisz_wiek()
+cz2.wypisz_wzrost()
+cz2.ruszaj()
+# NAzywam się: Anna
+# Mam 40 lat.
+# Mam 171 cm wzrostu.
+# Ruszyłam w drogę
