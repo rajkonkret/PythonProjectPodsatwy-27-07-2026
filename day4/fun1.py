@@ -6,9 +6,10 @@ a = 6
 b = 8
 
 
+# funkcje nie zwracajace wynika
 # deklaracja funkcji
 def dodaj():
-    print(a + b)
+    print(a + b)  # wypisz(a + b)
 
 
 def dodaj2(a, b):  # dwa o bowiązkowe do przekazania argumenty
@@ -40,3 +41,7 @@ dodaj2(1, b=90)  # 91
 
 # pozycyjne muszą byc przed nazwanymi
 # odejmij(a=10, 1, 2) # SyntaxError: positional argument follows keyword argument
+
+# print(dodaj() + dodaj2(6, 90))
+#      None       None
+# TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
