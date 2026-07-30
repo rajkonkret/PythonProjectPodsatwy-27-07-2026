@@ -68,3 +68,16 @@ print(f"Zastosowanie map(): {list(map(lambda x: x * 4, lista))}")
 print(f"Zastosowanie map(): {list(map(lambda x: x * 8, lista))}")
 # Zastosowanie map(): [4, 8, 56, 96, 200, 268, 320, 400, 800, 2000]
 # Zastosowanie map(): [8, 16, 112, 192, 400, 536, 640, 800, 1600, 4000]
+
+# filtrowanie danych
+l4 = []
+for i in lista:
+    if i < 3:
+        l4.append(i)
+print(l4)  # [1, 2]
+
+# filter()
+print(f"Zastosowanie filteR(): {list(filter(lambda x: x < 3, lista))}")
+print(f"Zastosowanie filteR(): {list(filter(lambda x: x < 10, lista))}")
+print(f"Zastosowanie filteR(): {list(filter(lambda x: x < 100, lista))}")
+print(f"Zastosowanie filteR(): {list(filter(lambda x: x > 200, lista))}")  # Zastosowanie filteR(): [500]
