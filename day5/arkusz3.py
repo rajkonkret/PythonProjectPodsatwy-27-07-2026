@@ -19,3 +19,5 @@ print(df)
 
 df.to_excel("courses.xlsx")
 df.to_excel("courses_no_index.xlsx", index=False)
+
+pivot_df
