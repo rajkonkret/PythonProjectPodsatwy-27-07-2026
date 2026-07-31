@@ -69,3 +69,8 @@ kur2.latam()  # Tu Kura zielonóżka Ja nie latam
 or2 = Orzel("Bielik", 55)
 print(or2)  # Bielik 55
 or2.latam()  # Tu Bielik Lecę z szybkością: 55 km/h
+
+kur2.wydaj_odglos()
+or2.wydaj_odglos()
+# Ko ko ko ko ko ko
+# Kier kiir kier kir kir
