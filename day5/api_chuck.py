@@ -17,3 +17,10 @@ print(response)  # <Response [200]>
 # 3xx warningi, przekierowanie
 # 4xx 404 - brak strony, 400 Bad request
 # 5xx błedy po stronie serwera
+
+print(response.text)
+
+data = response.json()
+print(data)
+
+print("Kawał:", )
