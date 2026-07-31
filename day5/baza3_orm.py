@@ -36,3 +36,11 @@ new_user = User(name="Jan Kowalski", age=30)
 sesion.add(new_user)
 # INSERT INTO users (name, age) VALUES (?, ?) -> ('Jan Kowalski', 30)
 sesion.commit()
+
+users = sesion.query(User).all()
+# SELECT users.id AS users_id, users.name AS users_name, users.age AS users_age
+# FROM users
+for u in users:
+    print(u.name)
+# Jan Kowalski
+# Jan Kowalski
