@@ -28,3 +28,11 @@ Base.metadata.create_all(engine)
 # 	age INTEGER,
 # 	PRIMARY KEY (id)
 # )
+
+Session = sessionmaker(bind=engine)
+sesion = Session()
+
+new_user = User(name="Jan Kowalski", age=30)
+sesion.add(new_user)
+# INSERT INTO users (name, age) VALUES (?, ?) -> ('Jan Kowalski', 30)
+sesion.commit()
