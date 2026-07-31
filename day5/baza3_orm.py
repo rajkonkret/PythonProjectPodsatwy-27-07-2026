@@ -22,3 +22,9 @@ class User(Base):
 engine = create_engine('sqlite:///my_database.db', echo=True)
 
 Base.metadata.create_all(engine)
+# CREATE TABLE users (
+# 	id INTEGER NOT NULL,
+# 	name VARCHAR,
+# 	age INTEGER,
+# 	PRIMARY KEY (id)
+# )
