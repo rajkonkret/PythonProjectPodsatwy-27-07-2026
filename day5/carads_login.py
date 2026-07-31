@@ -7,14 +7,11 @@ from dotenv import load_dotenv
 
 load_dotenv()  # ładuje .env z bieżącego katalogu lub katalogów nadrzędnych
 
-
 LOGIN_URL = "https://caradsportal.pl/login"
 OFFERS_URL = "https://caradsportal.pl/offers"
 
-
 USERNAME = os.getenv("CARADS_USER")
 PASSWORD = os.getenv("CARADS_PASS")
-
 
 if not USERNAME or not PASSWORD:
     raise ValueError("Ustaw zmienne środowiskowe CARADS_USER i CARADS_PASS")
@@ -44,4 +41,4 @@ with sync_playwright() as p:
     page.goto(OFFERS_URL)
 
     input("Naciśnij Enter, aby zamknąć przeglądarkę...")
-    browser.close()# playwright
+    browser.close()  # playwright
