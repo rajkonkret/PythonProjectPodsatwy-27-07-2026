@@ -17,3 +17,5 @@ print("Kurs:", data['rates'])  # [{'no': '147/A/NBP/2026', 'effectiveDate': '202
 print("Kurs:", data['rates'][0])  # {'no': '147/A/NBP/2026', 'effectiveDate': '2026-07-31', 'mid': 4.3128}
 print("Kurs:", data['rates'][0]['mid'])  # Kurs: 4.3128
 print("Kurs:", type(data['rates'][0]['mid']))  # Kurs: <class 'float'>
+# https://github.com/public-apis/public-apis
+# https://openweathermap.org/api
