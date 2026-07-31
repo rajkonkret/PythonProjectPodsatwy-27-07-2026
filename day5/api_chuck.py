@@ -23,4 +23,11 @@ print(response.text)
 data = response.json()
 print(data)
 
-print("Kawał:", )
+print("Kawał:", data['value'])
+
+icon_url = data['icon_url']
+print(icon_url)
+
+response_img = requests.get(icon_url)
+with open('icon.png', "wb") as f:
+    f.write(response_img.content)
