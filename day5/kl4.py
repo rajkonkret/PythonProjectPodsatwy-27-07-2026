@@ -51,6 +51,9 @@ class Orzel(Ptak):
     def wydaj_odglos(self):
         print("Kier kiir kier kir kir")
 
+    def polowanie(self):
+        print("Rozpoczynam polowanie")
+
 
 # nie można tworzyć obiektów klasy abstrakcyjnej
 # TypeError: Can't instantiate abstract class Ptak without an implementation for abstract method 'wydaj_odglos'
@@ -74,3 +77,10 @@ kur2.wydaj_odglos()
 or2.wydaj_odglos()
 # Ko ko ko ko ko ko
 # Kier kiir kier kir kir
+
+# polimorfizm - obiekty róznych klas mają wspolne metody
+lista = [or2, kur2]  # obiekty różnych klas
+for i in lista:
+    i.wydaj_odglos()
+# Kier kiir kier kir kir
+# Ko ko ko ko ko ko
