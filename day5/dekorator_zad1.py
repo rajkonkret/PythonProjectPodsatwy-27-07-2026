@@ -3,14 +3,15 @@
 def dekorator(funk):
     def wew():
         print("Dekorujemy")
-        return funk()  # zwracamy wynik funkcji
+        return funk().upper()  # zwracamy wynik funkcji
 
     return wew  # zwracamy adres funkcji
 
 
 @dekorator
 def hej():
-    print("Hej!!")
+    # print("Hej!!") # zwraca None
+    return "Hej!!"
 
 
 hej()  # Hej!!
@@ -18,3 +19,4 @@ hej()  # Hej!!
 # po dodaniu dekoratura
 # Dekorujemy
 # Hej!!
+print(hej())  # HEJ!!
