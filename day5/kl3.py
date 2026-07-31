@@ -27,6 +27,10 @@ class Car:
 
     def hamuj(self):
         self.__predkosc -= 10
+        self.__zmiana_biegu()
+
+    def __zmiana_biegu(self):
+        print('Zmiana biegu')
 
 
 car = Car("Toyota", 2026)
@@ -50,3 +54,14 @@ car.hamuj()
 car.hamuj()
 car.hamuj()
 car.licznik()  # Prędkośc wynosi: 0 km/h
+
+# Prędkośc wynosi: 50 km/h
+# Prędkośc wynosi: 50 km/h
+# Zmiana biegu
+# Zmiana biegu
+# Zmiana biegu
+# Zmiana biegu
+# Zmiana biegu
+# Prędkośc wynosi: 0 km/h
+
+# enkapsulacja - hermetyzowanie (pola prywatne) i wystawienie metod do zapisu i odczytu tzw: gettery, settery
