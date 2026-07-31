@@ -1,4 +1,8 @@
-class Ptak:
+from abc import ABC
+
+
+# klasa abstrakcyjna - klasa z której nie można tworzyc obiektów
+class Ptak(ABC):
     """
     Klasa Ptak opisująca ptaka w Pythonie
     """
@@ -49,3 +53,7 @@ kur1.latam()  # Tu Kura Lecę z szybkością: 0 km/h
 kur2 = Kura("Kura zielonóżka")
 print(kur2)  # Kura zielonóżka 0
 kur2.latam()  # Tu Kura zielonóżka Ja nie latam
+
+or2 = Orzel("Bielik", 55)
+print(or2)  # Bielik 55
+or2.latam()  # Tu Bielik Lecę z szybkością: 55 km/h
