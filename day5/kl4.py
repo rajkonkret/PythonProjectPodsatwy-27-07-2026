@@ -15,4 +15,4 @@ class Ptak:
 
 
 or1 = Ptak("Orzeł", 50)
-print(or1) # <__main__.Ptak object at 0x0000024BDF5D9A90> -> __str__
+print(or1)  # <__main__.Ptak object at 0x0000024BDF5D9A90> -> __str__
