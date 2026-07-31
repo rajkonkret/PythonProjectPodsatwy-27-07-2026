@@ -6,7 +6,7 @@ def wybierz_plik():
     plik = filedialog.askopenfilename(title="Wybierz plik")
 
     if plik:
-        print("Wybrano plik:", plik)  # Wybrano plik: C:/Users/CSComarch/Downloads/dane.xlsx
+        print("Wybrano plik:", plik)  # Wybrano plik: C:/Users/CSComarch/Downloads/sales.xlsx
 
 
 root = tk.Tk()
