@@ -32,6 +32,12 @@ class Kura(Ptak):
         print("Tu", self.gatunek, "Ja nie latam")
 
 
+class Orzel(Ptak):
+    """
+    Klasa Orzeł dziedziczy po klasie Ptak
+    """
+
+
 or1 = Ptak("Orzeł", 50)
 print(or1)  # <__main__.Ptak object at 0x0000024BDF5D9A90> -> __str__ ->   Orzeł 50
 or1.latam()  # Tu Orzeł Lecę z szybkością: 50 km/h
