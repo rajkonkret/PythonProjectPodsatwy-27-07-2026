@@ -19,6 +19,10 @@ try:
     email TEXT NOT NULL UNIQUE,
     salary REAL NOT NULL);
             """
+
+    c.execute(query)
+    conn.commit()
+
 except sqlite3.Error as e:
     print("Błąd:", e)
 finally:
